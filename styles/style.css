@@ -1,0 +1,497 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: arial;
+}
+
+input{
+    font-size:16px;
+}
+
+.dark{
+    background-color: #050505;
+    color: #999;
+}
+.dark .hover:hover,.dark .hover:active{
+    background-color:#202020;
+}
+
+.dark input:not([type="submit"]),
+.dark textarea {
+    background-color: #222;
+    color: #fff;
+    border: 1px solid#333;
+    border-radius: 7px;
+    height: auto;
+    padding: 5px;
+    outline: none;
+}
+
+.dark input:focus,
+textarea:focus {
+    border-color: #555;
+}
+
+
+.dark .con {
+    background-color: #111;
+}
+
+.dark .navbar {
+    background-color: #111;
+    border-bottom: 1px solid #333;
+}
+
+.dark .navbar a, .dark a,.svg {
+    color: #999;
+}
+
+.dark .navbar li:hover {
+    border-radius: 7px;
+    background-color: #222;
+}
+
+.dark tr:nth-child(even) {
+    background-color: #222;
+}
+
+.dark .btr,
+.dark .btg,
+.dark .btb {
+    color: #999;
+}
+
+/*Light*/
+.light{
+    background-color: #fff;
+    color: #222;
+}
+
+.light .hover:hover,.light .hover:active{
+    background-color:#d5d6d1;
+}
+
+.light input:not([type="submit"]),
+.light textarea {
+    background-color: #ddd;
+    color: #000;
+    border: 1px solid#888;
+    border-radius: 7px;
+    height: auto;
+    padding: 5px;
+    outline: none;
+}
+
+.light input:focus,
+textarea:focus {
+    border-color: #333;
+}
+
+.light .con {
+    background-color: #f4f5f6;
+}
+
+.light .navbar {
+    background-color: #f4f5f6;
+    border-bottom: 1px solid #d1d1d1;
+}
+
+.light .navbar a, .light a,.svg {
+    color: #111;
+}
+
+.ligt .navbar li:hover {
+    border-radius: 7px;
+    background-color: #222;
+}
+
+.light tr:nth-child(even) {
+    background-color: #ddd;
+}
+
+.light .btr,
+.light .btg,
+.light .btb {
+    color: #f4f5f6;
+}
+
+
+.navbar {
+    width: 100vw;
+    display: inline-flex;
+    position: sticky;
+    z-index: 100;
+    padding: 10px;
+    position: fixed;
+    align-items: center;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 1030;
+}
+
+.hover{
+transition:0.5s;    
+}
+.scale{
+    transition: 0.5s;
+}
+.scale:hover{
+    transform: scale(1.1);
+}
+.navbar+main {
+    margin-top: 36px;
+}
+
+.navl {
+    float: left;
+}
+
+.navc {
+    margin: auto;
+}
+
+.navr {
+    margin-left: auto;
+    margin-right: 20px;
+}
+
+
+.navi {
+    width: 40px;
+}
+
+.navbar ul {
+    list-style: none;
+    float: right;
+    margin-left: 10px;
+}
+
+.navbar li {
+    float: left;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.center {
+    margin: auto;
+    display: table;
+
+}
+
+.advcenter {
+    margin: 0 auto;
+}
+
+.tx-cen {
+    text-align: center;
+    align-items: center;
+}
+
+a {
+    color: #1144b7;
+    text-decoration: none;
+}
+
+/*Sizes*/
+.fit {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fll {
+    float: left;
+}
+
+.flr {
+    float: right;
+}
+
+.mvp-50 {
+    max-width: 50vw;
+}
+
+.mvp-60 {
+    max-width: 60vw;
+}
+
+.mvp-70 {
+    max-width: 70vw;
+}
+
+.mvp-80 {
+    max-width: 80vw;
+
+}
+
+.mvp-90 {
+    max-width: 90vw;
+}
+
+
+/*CONTAINER*/
+.flx{
+    width:100%;
+    height:100%;
+}
+
+
+.flxo {
+    display: flex;
+    flex-direction: column;
+}
+
+.flxi {
+    flex: 1;
+}
+
+.hfit {
+    display: inline-flex;
+    flex-wrap: wrap;
+
+}
+
+.vex {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.veb {
+    align-items: flex-end;
+}
+
+.hmid{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.con {
+    border-radius: 7px;
+    margin: 5px 2.5px;
+    padding: 10px;
+    float: left;
+}
+
+.con * {
+    margin: 5px 0px;
+}
+
+.con-fluid {
+    max-width: 100%;
+}
+
+.con-fluidx {
+    width: 100%;
+}
+
+
+@media (max-width: 576px) {
+
+    .conzone {
+        display: flex;
+        flex-direction: column;
+    }
+
+
+}
+
+
+
+@media (min-width: 576px) {
+
+    .con-sm {
+        max-width: 33.75rem;
+    }
+
+    .con-smx {
+        width: 33.75rem;
+    }
+
+
+}
+
+@media (min-width: 768px) {
+    .con-md {
+        max-width: 45rem;
+    }
+
+    .con-mdx {
+        width: 45rem;
+    }
+
+
+}
+
+@media (min-width: 992px) {
+    .con-lg {
+        max-width: 60rem;
+    }
+
+    .con-lgx {
+        width: 60rem;
+    }
+
+}
+
+@media (min-width: 1200px) {
+    .con-xl {
+        max-width: 71.25rem;
+    }
+
+    .con-xlx {
+        width: 71.25rem;
+    }
+}
+
+@media (min-width: 1400px) {
+    .con-xxl {
+        max-width: 82.5rem;
+    }
+
+    .con-xxlx {
+        width: 82.5rem;
+    }
+}
+
+
+/*BUTTONS*/
+
+.btna {
+    float: right;
+
+}
+
+.btn-sm {
+    border: none;
+    border-radius: 7px;
+    width: 5rem;
+    height: 1.8rem;
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 0.7rem;
+}
+
+.btn-md {
+    border: none;
+    border-radius: 7px;
+    width: 6rem;
+    height: 1.9rem;
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.btn-lg {
+    border: none;
+    border-radius: 7px;
+    width: 8rem;
+    height: 2.2rem;
+    transition: 0.5s;
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.btnf {
+    background-color: transparent;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 5px;
+    transition: 0.5s;
+    font-weight: 600;
+    float: left;
+}
+
+.btr {
+    background-color: #911;
+}
+
+.btr:hover,
+.btr:active {
+    background-color: #711;
+}
+
+.btg {
+    background-color: #297130;
+}
+
+.btg:hover,
+.btg:active {
+    background-color: #195110;
+}
+
+.btb {
+    background-color: #1144b7;
+}
+
+.btb:hover,
+.btb:active {
+    background-color: #1122b7;
+}
+
+/*outlined*/
+.btor {
+    background-color: transparent;
+    border: 1px solid #911;
+    color: #911;
+}
+
+.btor:hover,
+.btor:active {
+    color: #711;
+    border: 1px solid #711;
+}
+
+.btog {
+    background-color: transparent;
+    border: 1px solid #297130;
+    color: #297130;
+}
+
+.btog:hover,
+.btog:active {
+    border: 1px solid #195110;
+    color: #195110;
+}
+
+.btob {
+    background-color: transparent;
+    border: 1px solid #1144b7;
+    color: #1144b7;
+}
+
+.btob:hover,
+.btob:active {
+    border: 1px solid #1122b7;
+    color: #1122b7;
+}
+
+/*INPUT*/
+.inp-md{
+min-height:2.2rem;
+}
+.inp-lg{
+min-height:2.8rem;
+}
+
+/*TABLE*/
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+td {
+    width: 10rem;
+    padding: 5px;
+}
+
+th {
+    text-align: left;
+    padding: 5px;
+}
